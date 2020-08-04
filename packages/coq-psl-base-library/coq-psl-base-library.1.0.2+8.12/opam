@@ -1,0 +1,26 @@
+opam-version: "2.0"
+version: "1.0.2+8.12"
+maintainer: "Yannick Forster <forster@cs.uni-saarland.de>"
+authors: ["Gert Smolka"
+          "Sigurd Schneider"
+          "Dominik Kirst"
+          "Jan Christian Menz"
+          "Yannick Forster"
+          "Fabian Kunze"
+          "Maximilian Wuttke"]
+homepage: "https://github.com/uds-psl/base-library"
+bug-reports: "https://github.com/uds-psl/base-library/issues"
+license: "MIT"
+dev-repo: "git+https://github.com/uds-psl/base-library"
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+remove: ["rm" "-R" "%{lib}%/coq/user-contrib/PslBase"]
+depends: [
+  "ocaml"
+  "coq" { >= "8.12" & < "8.13~" }
+]
+synopsis: "Saarland University Programming Systems Lab Base Library"
+url {
+  src: "https://github.com/uds-psl/base-library/archive/v1.0.2-8.12.tar.gz"
+       checksum: "sha256=b272dbb9a04b7c6854513b8c0c59ed5926ef6d15a65894ea2fad0a91b899449f"
+}
