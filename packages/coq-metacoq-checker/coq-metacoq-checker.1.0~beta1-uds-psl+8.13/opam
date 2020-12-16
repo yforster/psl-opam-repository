@@ -25,7 +25,7 @@ depends: [
   "ocaml" {>= "4.07.1" & < "4.12~"}
   "coq" { >= "8.13~" & < "8.14~" }
   "coq-metacoq-template" 
-  "coq-equations" {= "1.2.3+8.13" }
+  "coq-equations" {= "1.2.3-uds-psl+8.13" }
 ]
 synopsis: "A quoting and unquoting library for Coq in Coq"
 description: """
